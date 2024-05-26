@@ -1,0 +1,47 @@
+.chat_text {
+  border-radius: $thirdBorderRadius;
+  box-shadow: 0 3px 30px rgba(#5c5c5c, 0.16);
+  padding: 55px 25px 25px 25px;
+  height: fit-content;
+  overflow: auto;
+  margin-bottom: 30px;
+}
+
+.block_chat_info {
+  width: 50%;
+
+  .time {
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    direction: ltr;
+    color: $paragraphThirdColor;
+  }
+
+  .text {
+    background-color: $primaryColor;
+    color: $thirdColor;
+    border-radius: $mainBorderRadius;
+    padding: 15px 20px;
+    width: fit-content;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  &.message_receiver {
+    width: fit-content;
+    max-width: 60%;
+    margin-inline-start: auto;
+    .text {
+      margin-inline-start: auto;
+      color: $primaryColor;
+      background-color: rgba($primaryColor, 0.31);
+    }
+  }
+
+  .name_desc_time_wrapper {
+    display: flex;
+    align-items: center;
+  }
+}

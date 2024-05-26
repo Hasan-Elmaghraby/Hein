@@ -1,0 +1,42 @@
+.account_info_block {
+  width: 100%;
+  box-shadow: 0 0 60px rgba(#5c5c5c, 0.14);
+  min-height: 70px;
+  max-height: 70px;
+  border-radius: 16px;
+  padding: 20px;
+  padding-inline-start: 40px;
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+  align-items: baseline;
+  font-size: 14px;
+  color: $secondaryColor;
+  font-weight: 800;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: url(../images/shapes/big_arrow.svg);
+    width: 10px;
+    height: 3px;
+    top: 33%;
+    inset-inline-end: 20px;
+  }
+
+  &:hover {
+    color: $secondaryColor;
+  }
+
+  &.delete_account {
+    color: #e90b0b;
+
+    &:hover {
+      color: #e90b0b;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}

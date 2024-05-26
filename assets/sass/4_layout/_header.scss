@@ -1,0 +1,71 @@
+@import "header/1_logo";
+@import "header/2_navbar";
+@import "header/3_toolbar_options";
+@import "header/4_menu_button";
+@import "header/5_dropdown";
+
+.fixed_header__ {
+  position: relative;
+  z-index: 111;
+  // background-color: $primaryColor;
+  // padding: 2rem 0;
+  padding-bottom: 6rem;
+  background-size: 100% 100%;
+  background-blend-mode: overlay;
+  background-image: url(../images/header_image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include sm {
+    padding-bottom: 3rem;
+  }
+
+  @include xs {
+    background-size: 130% 100%;
+  }
+
+  &.active_menu__,
+  &.not_active_menu__ {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 111;
+    transition: 0s;
+    background-color: $primaryColor;
+  }
+
+  &.active_menu__ {
+    animation: active-menu 0.5s;
+    box-shadow: 0 0 10px rgba(#000, 0.1);
+    padding: 1rem 0;
+    background-image: none;
+
+    .header_content__ {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &.not_active_menu__ {
+    animation: not-active-menu 0.5s;
+    // transform: translateY(-100%);
+    top: -200px;
+  }
+}
+
+.header_content__ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  padding-top: 5rem;
+
+  @include md {
+    padding-top: 3rem;
+  }
+
+  @include sm {
+    padding: 2rem;
+  }
+}

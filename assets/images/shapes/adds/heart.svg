@@ -1,0 +1,8 @@
+<svg id="heart_linear" data-name="heart/linear" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+  <g id="vuesax_linear_heart" data-name="vuesax/linear/heart">
+    <g id="heart">
+      <path id="Vector" d="M16.715,27.875a3.432,3.432,0,0,1-1.952,0C10.2,26.316,0,19.816,0,8.8A8.773,8.773,0,0,1,8.751,0a8.681,8.681,0,0,1,6.988,3.526A8.73,8.73,0,0,1,31.479,8.8C31.479,19.816,21.28,26.316,16.715,27.875Z" transform="translate(3.148 4.879)" fill="none" stroke="#8a8a8a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Vector-2" data-name="Vector" d="M0,0H37.775V37.775H0Z" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

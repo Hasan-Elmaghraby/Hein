@@ -1,0 +1,132 @@
+.Adds_card {
+  background-color: $thirdColor;
+  border-radius: $secondaryBorderRadius;
+  box-shadow: 0px 3px 30px rgba(#000, 0.16);
+  min-height: 167px;
+  display: flex;
+  // align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: 100%;
+  transition: $mainTransition;
+  padding: 20px;
+  gap: 30px;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  .figure_wrapper {
+    width: 100%;
+    max-width: 161px;
+    border-radius: $secondaryBorderRadius;
+    overflow: hidden;
+    position: relative;
+
+    .figure_title {
+      position: absolute;
+      top: 4%;
+      color: $secondaryColor;
+      font-size: 1.5rem;
+      inset-inline-start: 4%;
+      background-color: rgba($thirdColor, 0.78);
+      padding: 3% 12%;
+      border-radius: $secondaryBorderRadius;
+      //  min-width: 40%;
+    }
+  }
+  .figure__ {
+    @include p-bottom(162, 161);
+  }
+
+  .card_desc {
+    width: 100%;
+  }
+  .title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $secondaryColor;
+    margin-bottom: 1rem;
+  }
+
+  .time_location {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $paragraphSecondaryColor;
+    margin-bottom: 1.9rem;
+  }
+
+  .name_info {
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $yellowColor;
+    gap: 20px;
+    margin-bottom: 16px;
+
+    .icon__ {
+      position: relative;
+      margin: 0;
+
+      &::before {
+        position: absolute;
+        content: "";
+        @include circle(32px);
+        background-color: rgba($yellowColor, 0.19);
+        top: 50%;
+        inset-inline-end: 50%;
+        transform: translate(-50%, -50%);
+
+        @include dir {
+          inset-inline-start: 50%;
+        }
+      }
+    }
+  }
+
+  @include xs {
+    flex-direction: column;
+
+    .figure_wrapper {
+      max-width: 100%;
+    }
+  }
+
+  .waiting_message {
+    font-size: 14px;
+    color: $yellowColor;
+    display: flex;
+    gap: 10px;
+    margin-top: 13px;
+  }
+
+  .buttons_group {
+    gap: 10px;
+
+    .full_width {
+      min-width: auto;
+      height: 38px;
+    }
+
+    .primary__ {
+      background-color: transparent;
+      color: $primaryColor;
+      border: 1px solid $primaryColor;
+    }
+  }
+}
+
+.buttons_group {
+  gap: 10px;
+
+  .full_width {
+    min-width: auto;
+  }
+
+  .edit_button_ {
+    flex: 2.5;
+  }
+  .red_bg_button {
+    flex: 1;
+  }
+}

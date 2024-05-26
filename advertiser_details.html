@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Hien</title>
+
+  <link rel="Site Icon" href="assets/images/logo.svg" />
+
+  <!-- ############################################################# -->
+  <!-- ################ Include Bootstrap Css Files ################ -->
+  <!-- #########################  Ar Pages ######################### -->
+  <link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css" />
+  <!-- #########################  En Pages ######################### -->
+  <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+  <!-- ############################################################ -->
+  <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" />
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/swiper.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Start Header Section -->
+
+  <header class="main_header__">
+    <div class="fixed_header__">
+      <div class="container">
+        <div class="header_content__">
+          <a class="header_logo__" href="index.html">
+            <figure class="figure__">
+              <img src="assets/images/logo.svg" alt=".." />
+            </figure>
+          </a>
+
+          <nav class="nav-om" id="navbar-menu-om">
+            <button class="close-button__"></button>
+
+            <figure class="figure__ nav_logo__">
+              <img src="assets/images/logo.svg" alt=".." />
+            </figure>
+
+            <ul class="nav-list-om list-unstyled">
+              <li class="header_list_item__ active">
+                <a href="index.html">الرئيسية </a>
+              </li>
+              <li class="header_list_item__">
+                <a href="about_us.html"> من نحن</a>
+              </li>
+              <li class="header_list_item__ ">
+                <div class="custom_dropdown__  sections">
+                  <button class="button__ dropdown_button__ sections_dropdown ">
+                    الأقسام
+                  </button>
+
+                  <div class="dropdown_menu__ section_menu_dropdown_">
+                    <ul>
+                      <li>
+                        <a class="link__ modify__" href="#">
+                          القسم الاول
+                        </a>
+                      </li>
+                      <li>
+                        <a class="link__ modify__" href="#">
+                          القسم الثاني
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </li>
+              <li class="header_list_item__">
+                <a href="products_page.html"> أحدث الاعلانات </a>
+              </li>
+              <li class="header_list_item__">
+                <a href="products_page.html"> تواصل معنا </a>
+              </li>
+            </ul>
+
+            <ul class="toolbar_options__ list-unstyled">
+              <li class=" input_search ">
+                <input class="input__ colored_white__" type="text" placeholder="قم بالبحث الآن...">
+              </li>
+
+              <li class="block__ ">
+                <a class="link__ modify__" href="notifications.html">
+                  <img src="assets/images/shapes/header_icons/notification.svg" alt=".." />
+                  <span class="circle_shape"></span>
+                </a>
+              </li>
+
+              <li class="block__ ">
+                <a class="link__ modify__" href="conversations.html">
+                  <img src="assets/images/shapes/header_icons/sms-tracking-linear.svg" alt=".." />
+                  <span class="circle_shape"></span>
+                </a>
+              </li>
+
+              <li class="block__ ">
+                <a class="link__ modify__" href="add_new_advertisement.html">
+                  <img src="assets/images/shapes/header_icons/add.svg" alt=".." />
+                </a>
+              </li>
+
+              <li class="block__ profile_item__ logged_in__">
+                <div class="custom_dropdown__ ">
+                  <button type="button"
+                    class="button__ dropdown_button__ link__ header_link__ profile_link__ full_rounded__">
+                    <img src="assets/images/shapes/header_icons/profile-bold.svg" alt=".." />
+                  </button>
+
+                  <div class="dropdown_menu__ profile_menu">
+                    <ul class="dropdown_list">
+                      <li>
+                        <a class="link__ profile__" href="profile.html"> <img
+                            src="assets/images/shapes/header_signin/account.svg" alt=""> الملف الشخصي</a>
+
+                      </li>
+                      <li>
+                        <a class="link__ profile__" href="myAds.html"> <img
+                            src="assets/images/shapes/header_signin/receipt-add-linear.svg" alt=""> إعلاناتي</a>
+
+                      </li>
+                      <li>
+                        <a class="link__ profile__" href="favourite.html"> <img
+                            src="assets/images/shapes/header_signin/heart-linear.svg" alt=""> المفضلة</a>
+
+                      </li>
+                      <li>
+                        <a class="link__ profile__" href="followers.html"> <img
+                            src="assets/images/shapes/header_signin/followers.svg" alt=""> المتابعون</a>
+
+                      </li>
+                      <li>
+                        <a class="link__ profile__" href="packages.html"> <img
+                            src="assets/images/shapes/header_signin/cube.svg" alt=""> الباقات</a>
+
+                      </li>
+                      <li>
+                        <a class="link__ profile__" href="wallet.html"> <img
+                            src="assets/images/shapes/header_signin/wallet.svg" alt=""> المحفظة</a>
+
+                      </li>
+                      <li>
+                        <a class="link__ profile__" href="commission.html"> <img
+                            src="assets/images/shapes/header_signin/mony.svg" alt=""> عمولة الموقع</a>
+
+                      </li>
+                      <li>
+                        <button data-toggle="modal" data-target="#log_out-modal" class="button__ logout__">
+                          <img src="assets/images/shapes/header_signin/logout.svg" alt=""> تسجيل الخروج
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+
+              <li class="block__ language_item__">
+                <div class="custom_dropdown__">
+                  <a class="link__ modify__" href="index_en.html">
+                    <img src="assets/images/shapes/header_icons/lang.svg" alt=".." />
+                  </a>
+                </div>
+              </li>
+
+
+            </ul>
+          </nav>
+
+          <!-- start active nenu button in small sizes  -->
+          <button class="menu_button__ button__" id="menu-butt-activ-om">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+              class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512">
+              <path fill="currentColor"
+                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+              </path>
+            </svg>
+          </button>
+          <!-- end active nenu button in small sizes  -->
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </div>
+  </header>
+
+  <!-- End Header Section -->
+
+
+
+  <!-- Start Advertiser details Page -->
+
+  <main class="advertiser_details_page default_page__">
+    <div class="container">
+      <div class="section_head_wrapper ">
+        <h2 class="section_main_title__">تفاصيل المعلن</h2>
+      </div>
+
+      <div class="advertiser_data_block  big_account_info justify_start">
+
+        <div class="advertiser_info ">
+          <figure class="icon__"> <img src="assets/images/shapes/big_profile-bold.svg" alt=""></figure>
+          <div class="info_name ">
+            <h3 class="name">أحمد رامي</h3>
+            <div class="rate_star d-flex align-items-center">
+              <figure class="icon__"><img src="assets/images/shapes/yellow_star.svg" alt=""></figure>
+              <h6 class="number"> 4.5 </h6>
+              <!-- start modal button -->
+              <button type="button" class="btn " data-toggle="modal" data-target="#modal_assessement">
+                <div class="show_assessement d-flex">عرض التقييمات <figure class="icon__"><img
+                      src="assets/images/shapes/small_arrow.svg" alt="">
+                  </figure>
+                </div>
+              </button>
+              <!-- End modal button -->
+            </div>
+          </div>
+
+        </div>
+
+        <button class="button__ primary__ main_rounded__  fixed_size__">
+          <figure class="icon__ m-0"><img src="assets/images/shapes/add_follower.png" alt=""></figure> متابعة طلباتي
+        </button>
+      </div>
+
+
+      <div class="section_head_wrapper margin_top__">
+        <h3 class="section_main_title__ ">قائمة الإعلانات</h3>
+      </div>
+
+      <div class="row row_modify with_row_gap">
+
+        <div class="col-sm-6">
+          <a href="adds_details.html" class="Adds_card link__">
+            <div class="figure_wrapper">
+              <figure class=" figure__  asp-om "><img class="img-om " src="assets/images/adds_sec/chair.png" alt="">
+              </figure>
+              <h3 class="figure_title">أثاث</h3>
+            </div>
+
+            <div class="card_desc">
+              <h3 class="title">كرسي خشبي أسود خشب زان</h3>
+              <h4 class="time_location"> منذ 5 ساعات / مدينة الرياض , الدرعية</h4>
+
+              <h5 class="price">375 <span class="currency">ر.س</span></h5>
+
+
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6">
+          <a href="adds_details.html" class="Adds_card link__">
+            <div class="figure_wrapper">
+              <figure class=" figure__  asp-om "><img class="img-om " src="assets/images/adds_sec/chair.png" alt="">
+              </figure>
+              <h3 class="figure_title">أثاث</h3>
+            </div>
+
+            <div class="card_desc">
+              <h3 class="title">كرسي خشبي أسود خشب زان</h3>
+              <h4 class="time_location"> منذ 5 ساعات / مدينة الرياض , الدرعية</h4>
+
+              <h5 class="price">375 <span class="currency">ر.س</span></h5>
+
+
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+
+  <!-- End Advertiser details Page -->
+
+
+
+  <!-- Start Footer Section -->
+
+  <footer class="footer_sec__">
+    <div class="container">
+      <div class="row row_modify with_row_gap footer_content__">
+        <div class="col-lg-2">
+          <a class="footer_logo__" href="index.html">
+            <figure class="figure__">
+              <img src="assets/images/footer_logo.png" alt=".." />
+            </figure>
+          </a>
+        </div>
+
+        <div class="col-lg-5">
+          <h3 class="footer_head__">روابط سريعة</h3>
+          <ul class="footer_list__ list-unstyled">
+            <li><a href="#">من نحن</a></li>
+            <li><a href="commission.html">عمولة الموقع</a></li>
+            <li><a href="#">الأقسام</a></li>
+            <li><a href="privacy_policy.html">سياسة الخصوصية</a></li>
+            <li><a href="#">أحدث لأعلانات</a></li>
+            <li><a href="employment_treaty.html">معاهدة الإستخدام </a></li>
+            <li><a href="#">تواصل معنا</a></li>
+            <li><a href="#">تسجيل الدخول</a></li>
+
+          </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h3 class="footer_head__ center_sm">تابعنا علي</h3>
+          <ul class="footer_socials__ list-unstyled">
+
+            <li class="li__">
+              <a href="#!" class="link__">
+                <img class="img-om" src="assets/images/socials/snap_chat.svg" alt=".." width="" height="" />
+              </a>
+            </li>
+            <li class="li__">
+              <a href="#!" class="link__">
+                <img class="img-om" src="assets/images/socials/facebook.svg" alt=".." width="" height="" />
+              </a>
+            </li>
+            <li class="li__">
+              <a href="#!" class="link__">
+                <img class="img-om" src="assets/images/socials/what's_up.svg" alt=".." width="" height="" />
+              </a>
+            </li>
+            <li class="li__">
+              <a href="#!" class="link__">
+                <img class="img-om" src="assets/images/socials/instagram.svg" alt=".." width="" height="" />
+              </a>
+            </li>
+          </ul>
+          <div class="copyrights_content___">
+            <img class="copyright_icon__" src="assets/images/shapes/copyright.png" alt=".." />
+            جميع الحقوق محفوظة - هين 2024
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- End Footer Section -->
+
+
+  <!-- Start Modals -->
+  <div class="modal fade" id="modal_assessement" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content popup_service">
+        <div class="modal-header">
+          <h5 class="modal-title" id="">التقييمات</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img src="assets/images/shapes/close-modal.png" alt=""></span>إغلاق
+          </button>
+        </div>
+
+        <div class="modal_advertiser_info ">
+
+          <div class="advertiser_data_block model_advertiser">
+            <div class="advertiser_info ">
+              <figure class="icon__"> <img src="assets/images/shapes/yellow_profile.svg" alt=""></figure>
+              <div class="info_name">
+                <h5 class="title">تقييمي الكلي</h5>
+                <h3 class="name">أحمد رامي</h3>
+                <div class="rate_star">
+                  <figure class="icon__"><img src="assets/images/shapes/yellow_star.svg" alt=""></figure>
+                  <h6 class="number"> 4.0 </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="comment_cards_wrapper">
+
+            <div class="comment_card model_comment_card">
+              <div class="name_rate_wrapper">
+                <div class="name_desc_wrapper">
+                  <div class="figure_wrapper">
+                    <figure class=" figure__ loading-omd asp-om "><img class="img-om lazy-omd"
+                        data-src="assets/images/adds_sec/default_man.png" alt=""></figure>
+                  </div>
+
+                  <div class="name_desc">
+                    <h3 class="name">أحمد رامي</h3>
+                    <h3 class="time">منذ ساعة</h3>
+                  </div>
+                </div>
+
+                <div class="rate_star">
+                  <figure class="icon__"><img src="assets/images/shapes/star_grey-s.png" alt=""></figure>
+                  <figure class="icon__"><img src="assets/images/shapes/yellow_star_s.png" alt=""></figure>
+                  <figure class="icon__"><img src="assets/images/shapes/yellow_star_s.png" alt=""></figure>
+                  <figure class="icon__"><img src="assets/images/shapes/yellow_star_s.png" alt=""></figure>
+                  <figure class="icon__"><img src="assets/images/shapes/yellow_star_s.png" alt=""></figure>
+                  <h6 class="number"> 4.0 </h6>
+                </div>
+              </div>
+              <p class="parg">هنا يكتب نص التعليق الذي تم إضافته من قبل المستخدم</p>
+
+            </div>
+
+            <div class="comment_card model_comment_card">
+              <div class="name_rate_wrapper">
+                <div class="name_desc_wrapper">
+                  <div class="figure_wrapper">
+                    <figure class=" figure__ loading-omd asp-om "><img class="img-om lazy-omd"
+                        data-src="assets/images/adds_sec/man.png" alt=""></figure>
+                  </div>
+
+                  <div class="name_desc">
+                    <h3 class="name">هيثم سليم</h3>
+                    <h3 class="time">الخميس 22 فبراير 2024</h3>
+                  </div>
+                </div>
+
+                <div class="rate_star">
+                  <figure class="icon__"><img src="assets/images/shapes/star_grey-s.png" alt=""></figure>
+                  <figure class="icon__"><img src="assets/images/shapes/star_grey-s.png" alt=""></figure>
+                  <figure class="icon__"><img src="assets/images/shapes/yellow_star_s.png" alt=""></figure>
+                  <figure class="icon__"><img src="assets/images/shapes/yellow_star_s.png" alt=""></figure>
+                  <figure class="icon__"><img src="assets/images/shapes/yellow_star_s.png" alt=""></figure>
+                  <h6 class="number"> 3.0 </h6>
+                </div>
+              </div>
+              <p class="parg">هنا يكتب نص التعليق الذي تم إضافته من قبل المستخدم</p>
+
+            </div>
+
+            <div class="comment_card model_comment_card">
+              <div class="name_rate_wrapper">
+                <div class="name_desc_wrapper">
+                  <div class="figure_wrapper">
+                    <figure class=" figure__ loading-omd asp-om "><img class="img-om lazy-omd"
+                        data-src="assets/images/adds_sec/default_man.png" alt=""></figure>
+                  </div>
+
+                  <div class="name_desc">
+                    <h3 class="name">أحمد رامي</h3>
+                    <h3 class="time">منذ ساعة</h3>
+                  </div>
+                </div>
+
+                <div class="rate_star">
+                  <figure class="icon__"><img src="assets/images/shapes/star_grey-s.png" alt=""></figure>
+                  <figure class="icon__"><img src="assets/images/shapes/yellow_star_s.png" alt=""></figure>
+                  <figure class="icon__"><img src="assets/images/shapes/yellow_star_s.png" alt=""></figure>
+                  <figure class="icon__"><img src="assets/images/shapes/yellow_star_s.png" alt=""></figure>
+                  <figure class="icon__"><img src="assets/images/shapes/yellow_star_s.png" alt=""></figure>
+                  <h6 class="number"> 4.0 </h6>
+                </div>
+              </div>
+              <p class="parg">هنا يكتب نص التعليق الذي تم إضافته من قبل المستخدم</p>
+
+            </div>
+
+            <div class="comment_card model_comment_card">
+              <div class="name_rate_wrapper">
+                <div class="name_desc_wrapper">
+                  <div class="figure_wrapper">
+                    <figure class=" figure__ loading-omd asp-om "><img class="img-om lazy-omd"
+                        data-src="assets/images/adds_sec/man.png" alt=""></figure>
+                  </div>
+
+                  <div class="name_desc">
+                    <h3 class="name">هيثم سليم</h3>
+                    <h3 class="time">الخميس 22 فبراير 2024</h3>
+                  </div>
+                </div>
+
+                <div class="rate_star">
+                  <figure class="icon__"><img src="assets/images/shapes/star_grey-s.png" alt=""></figure>
+                  <figure class="icon__"><img src="assets/images/shapes/star_grey-s.png" alt=""></figure>
+                  <figure class="icon__"><img src="assets/images/shapes/yellow_star_s.png" alt=""></figure>
+                  <figure class="icon__"><img src="assets/images/shapes/yellow_star_s.png" alt=""></figure>
+                  <figure class="icon__"><img src="assets/images/shapes/yellow_star_s.png" alt=""></figure>
+                  <h6 class="number"> 3.0 </h6>
+                </div>
+              </div>
+              <p class="parg">هنا يكتب نص التعليق الذي تم إضافته من قبل المستخدم</p>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!--  Log Out Modal -->
+  <div class="modal fade deal_modal_report" id="log_out-modal" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content content_block">
+        <div class="modal-header">
+          <figure class="modal-title icon__" id=""><img src="assets/images/shapes/logout.png" alt=""></figure>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img src="assets/images/shapes/close-modal.png" alt=""></span>إغلاق
+          </button>
+        </div>
+
+        <h3 class="title">تسجيل الخروج</h3>
+        <p class="parg">هل أنت متأكد من تسجيل الخروج
+          من حسابك ؟</p>
+
+
+        <button class="button__ primary__ main_rounded__ red_bg_button full_width">
+          تسجيل الخروج
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- End Modals -->
+
+
+
+  <!-- start js include  -->
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap-select.min.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/swiper.min.js"></script>
+  <script src="assets/js/webrouk-custom-range.js"></script>
+  <script src="assets/js/plugin.js"></script>
+</body>
+
+</html>

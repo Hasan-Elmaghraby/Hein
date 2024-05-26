@@ -1,0 +1,379 @@
+.link__ {
+  cursor: pointer;
+
+  border: 1px solid transparent;
+  border-radius: $mainBorderRadius;
+  outline: none;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  justify-content: center;
+  text-decoration: none;
+  gap: 10px;
+  color: $secondaryColor;
+  font-weight: 400;
+  font-size: 1.6rem;
+  transition: 0.5s;
+
+  &.main_link {
+    color: #fff;
+    height: 54px;
+    background-color: $primaryColor;
+
+    @include xxs {
+      height: 42px;
+    }
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  .icon__ {
+    flex-shrink: 0;
+    transition: 0.5s;
+  }
+
+  &:focus {
+    border: none;
+    // outline: none;
+  }
+
+  &.default_cursor {
+    cursor: default;
+  }
+
+  // ===================================================================
+  // Center
+  // ===================================================================
+
+  &.center {
+    margin: 0 auto;
+  }
+
+  &.center_md {
+    @include md {
+      margin: 0 auto;
+    }
+  }
+
+  &.center_sm {
+    @include sm {
+      margin: 0 auto;
+    }
+  }
+
+  &.center_xs {
+    @include xs {
+      margin: 0 auto;
+    }
+  }
+
+  &.center_xxs {
+    @include xxs {
+      margin: 0 auto;
+    }
+  }
+
+  // ===================================================================
+  // Size
+  // ===================================================================
+
+  &.full_width {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  &.full_width_md {
+    @include md {
+      width: 100%;
+      min-width: 100%;
+    }
+  }
+
+  &.full_width_sm {
+    @include sm {
+      width: 100%;
+      min-width: 100%;
+    }
+  }
+
+  &.full_width_xs {
+    @include xs {
+      width: 100%;
+      min-width: 100%;
+    }
+  }
+
+  &.full_width_xxs {
+    @include xxs {
+      width: 100%;
+      min-width: 100%;
+    }
+  }
+
+  &.half_width {
+    width: 50%;
+  }
+
+  &.half_width_md {
+    @include md {
+      width: 50%;
+    }
+  }
+
+  &.half_width_sm {
+    @include sm {
+      width: 50%;
+    }
+  }
+
+  &.half_width_xs {
+    @include xs {
+      width: 50%;
+    }
+  }
+
+  &.half_width_xxs {
+    @include xxs {
+      width: 50%;
+    }
+  }
+
+  // ===================================================================
+  // Fixed Width
+  // ===================================================================
+
+  &.fixed_size__ {
+    min-width: 183px;
+    max-width: 183px;
+  }
+
+  // ===================================================================
+  // Margin
+  // ===================================================================
+  &.margin_start_auto__ {
+    margin-inline-start: auto;
+  }
+
+  // ===================================================================
+  // Icon
+  // ===================================================================
+  &.scale_icon_on_hover {
+    &:hover {
+      .icon__ {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &.icon_dir {
+    .icon__ {
+      @include dir {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  // ===================================================================
+  // Colors
+  // ===================================================================
+
+  &.primary__ {
+    background-color: $primaryColor;
+    border-color: $primaryColor;
+
+    &.outline__ {
+      color: $primaryColor;
+
+      &:hover {
+        background-color: rgba($primaryColor, 0.1) !important;
+      }
+    }
+
+    &:hover {
+      background-color: rgba($primaryColor, 0.9);
+    }
+  }
+
+  &.secondary__ {
+    background-color: $secondaryColor;
+    border-color: $secondaryColor;
+
+    &.outline__ {
+      color: $secondaryColor;
+
+      &:hover {
+        background-color: rgba($secondaryColor, 0.1) !important;
+      }
+    }
+
+    &:hover {
+      background-color: rgba($secondaryColor, 0.9);
+    }
+  }
+
+  &.red__ {
+    background-color: $redColor;
+    border-color: $redColor;
+
+    &.outline__ {
+      color: $redColor;
+
+      &:hover {
+        background-color: rgba($redColor, 0.1) !important;
+      }
+    }
+
+    &:hover {
+      background-color: rgba($redColor, 0.9);
+    }
+  }
+
+  &.green__ {
+    background-color: $greenColor;
+    border-color: $greenColor;
+
+    &.outline__ {
+      color: $greenColor;
+
+      &:hover {
+        background-color: rgba($greenColor, 0.1) !important;
+      }
+    }
+
+    &:hover {
+      background-color: rgba($greenColor, 0.9);
+    }
+  }
+
+  &.grey__ {
+    background-color: $greyColor;
+    border-color: $greyColor;
+
+    &.outline__ {
+      color: $greyColor;
+
+      &:hover {
+        background-color: rgba($greyColor, 0.1) !important;
+      }
+    }
+
+    &:hover {
+      background-color: rgba($greyColor, 0.9);
+    }
+  }
+
+  &.orange__ {
+    background-color: $orangeColor;
+    border-color: $orangeColor;
+
+    &.outline__ {
+      color: $orangeColor;
+
+      &:hover {
+        background-color: rgba($orangeColor, 0.1) !important;
+      }
+    }
+
+    &:hover {
+      background-color: rgba($orangeColor, 0.9);
+    }
+  }
+
+  &.yellow__ {
+    background-color: $yellowColor;
+    border-color: $yellowColor;
+
+    &.outline__ {
+      color: $yellowColor;
+
+      &:hover {
+        background-color: rgba($yellowColor, 0.1) !important;
+      }
+    }
+
+    &:hover {
+      background-color: rgba($yellowColor, 0.9);
+    }
+  }
+
+  // ===================================================================
+  // Outline
+  // ===================================================================
+  &.outline__ {
+    background-color: transparent !important;
+  }
+
+  // ===================================================================
+  // Border Radius
+  // ===================================================================
+  &.main_rounded__ {
+    border-radius: $mainBorderRadius;
+  }
+
+  &.secondary_rounded__ {
+    border-radius: $secondaryBorderRadius;
+  }
+
+  &.third_rounded__ {
+    border-radius: $thirdBorderRadius;
+  }
+
+  &.full_rounded__ {
+    border-radius: 50%;
+  }
+
+  // ===================================================================
+  // Other
+  // ===================================================================
+
+  &.forgot_password__ {
+    color: $headingMainColor;
+    height: fit-content;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 1.5rem auto;
+
+    &:hover {
+      color: $primaryColor;
+      text-decoration: underline;
+    }
+  }
+
+  &.register_link {
+    color: $primaryColor;
+    border: 1px solid $primaryColor;
+    width: 100%;
+
+    &:hover {
+      background-color: $primaryColor;
+      color: #fff;
+      .icon__ {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+
+  &.sign_up_link__ {
+    color: $yellowColor;
+    font-size: 1.4rem;
+    font-weight: 800;
+  }
+
+  &.checkbox_commission_link__ {
+    font-size: 1.4rem;
+    color: $secondaryColor;
+    font-weight: 800;
+  }
+
+  &.edit_data {
+    background-color: rgba($primaryColor, 0.09);
+    font-size: 1.4rem;
+    color: $primaryColor;
+    font-weight: 800;
+    padding: 18px;
+    width: 100%;
+    align-items: baseline;
+  }
+}

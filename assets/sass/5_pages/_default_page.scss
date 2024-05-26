@@ -1,0 +1,174 @@
+.default_page__ {
+  min-height: 50vh;
+  padding-top: 35px;
+  padding-bottom: 50px;
+
+  @include sm {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  @include xs {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.default_section__ {
+  padding-bottom: 65px;
+  padding-top: 65px;
+
+  @include sm {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  @include xs {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+
+.section_tools_wrapper__ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include xxs {
+    flex-direction: column;
+    margin: 20px 0;
+  }
+}
+
+.upgrade_text__ {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: $headingMainColor;
+  margin-bottom: 0;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 250px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+
+  &.none_margin {
+    margin-bottom: 0;
+  }
+}
+
+.row_modify {
+  display: flex;
+
+  @include md {
+    justify-content: center;
+  }
+
+  &.with_row_gap {
+    row-gap: 30px;
+
+    @include xs {
+      row-gap: 15px;
+    }
+  }
+
+  &.with_margin_bottom__ {
+    margin-bottom: 30px;
+  }
+
+  &.large_row_gap {
+    row-gap: 90px !important;
+  }
+
+  &.reverse_dir_column_small_size {
+    @include sm {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &.justify_between__ {
+    justify-content: space-between;
+  }
+
+  &.justify_end__ {
+    justify-content: flex-end;
+  }
+  &.justify_start__ {
+    justify-content: flex-start;
+  }
+
+  &.items_center__ {
+    align-items: center;
+  }
+
+  &.space_between {
+    justify-content: space-between;
+  }
+
+  &.align_center {
+    align-items: center;
+  }
+
+  &.items_start__ {
+    align-items: flex-start;
+  }
+
+  &.items_end__ {
+    align-items: flex-end;
+  }
+
+  &.with_border_bottom__ {
+    border-bottom: 1px solid rgba(#fff, 0.1);
+    padding-bottom: 3rem;
+  }
+
+  &.with_margin_top__ {
+    margin-top: 3rem;
+
+    @include sm {
+      margin-top: 3rem;
+    }
+
+    @include xs {
+      margin-top: 2rem;
+    }
+  }
+}
+
+.col_flex {
+  display: flex;
+}
+
+.section_block_title__ {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: $headingMainColor;
+  margin-bottom: 20px;
+}
+
+.parg * {
+  font-size: 1.4rem;
+  color: #727272;
+  font-weight: 300;
+  margin-bottom: 14px;
+  line-height: 2;
+}
+
+.parg {
+  &.center * {
+    text-align: center;
+  }
+}
+
+.parg_bold * {
+  font-size: 1.4rem;
+  color: $secondaryColor;
+  font-weight: 400;
+  margin-bottom: 14px;
+  line-height: 1.8;
+}
+
+.parg_bold {
+  &.center * {
+    text-align: center;
+  }
+}

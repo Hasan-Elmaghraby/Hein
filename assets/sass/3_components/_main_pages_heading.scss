@@ -1,0 +1,120 @@
+.page_main_title__ {
+  font-size: 2.5rem;
+  font-weight: 800;
+  width: fit-content;
+  color: $secondaryColor;
+  margin-bottom: 12px;
+  margin: 0;
+  margin-bottom: 15px;
+
+  &.with_figure {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    &::before {
+      display: block;
+      content: url("../images/shapes/sections/lamp-linear.png");
+      width: 37px;
+      height: 37px;
+    }
+  }
+
+  @include xs {
+    font-size: 1.8rem;
+  }
+
+  &.none_margin {
+    margin-bottom: 0;
+  }
+}
+
+.page_sub_title__ {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: $headingMainColor;
+  margin: 0;
+
+  @include xs {
+    font-size: 1.4rem;
+  }
+}
+
+.page_head_wrapper {
+  margin-bottom: 30px;
+
+  @include sm {
+    margin-bottom: 20px;
+  }
+
+  @include xs {
+    margin-bottom: 15px;
+  }
+
+  .head_figure_page {
+    justify-content: center;
+  }
+
+  &.center {
+    .page_main_title__,
+    .page_sub_title__ {
+      text-align: center;
+      margin-inline-end: auto;
+      margin-inline-start: auto;
+    }
+  }
+
+  &.flex_display {
+    display: flex;
+    align-items: center;
+
+    &.justify_content_between {
+      justify-content: space-between;
+    }
+  }
+
+  &.small_size_dir_column {
+    @include sm {
+      gap: 20px;
+      flex-direction: column;
+    }
+  }
+
+  &.small_size_center__ {
+    @include sm {
+      .page_main_title__,
+      .page_sub_title__ {
+        text-align: center;
+      }
+    }
+  }
+
+  &.none_margin__ {
+    margin: 0 !important;
+  }
+
+  &.small_size_flex__ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &.large_margin_bottom__ {
+    margin-bottom: 40px;
+
+    @include sm {
+      margin-bottom: 20px;
+    }
+  }
+
+  &.margin_top__ {
+    margin-top: 1rem;
+  }
+}
+
+.title_icon_wrapper__ {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

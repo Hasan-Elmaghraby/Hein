@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.629" height="19.629" viewBox="0 0 19.629 19.629">
+  <g id="search-normal_linear" data-name="search-normal/linear" transform="translate(0)">
+    <g id="vuesax_linear_search-normal" data-name="vuesax/linear/search-normal" transform="translate(0)">
+      <g id="search-normal">
+        <path id="Vector" d="M0,7.77A7.77,7.77,0,1,0,7.77,0,7.77,7.77,0,0,0,0,7.77Z" transform="translate(2.454 1.636)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Vector-2" data-name="Vector" d="M0,1.636,1.636,0" transform="translate(1.636 16.358)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Vector-3" data-name="Vector" d="M19.629,0H0V19.629H19.629Z" fill="none" opacity="0"/>
+      </g>
+    </g>
+  </g>
+</svg>

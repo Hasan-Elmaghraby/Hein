@@ -1,0 +1,11 @@
+.message_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+
+  .figure {
+    max-width: 300px;
+  }
+}

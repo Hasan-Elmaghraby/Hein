@@ -1,0 +1,18 @@
+.connect_block {
+  background-color: rgba($primaryColor, 0.13);
+  color: $primaryColor;
+  padding: 12px 25px;
+  border-radius: 13px;
+
+  &:hover {
+    background-color: rgba($primaryColor, 0.2);
+  }
+
+  &.call {
+    color: #06bf25;
+    background-color: rgba(#06bf25, 0.09);
+    &:hover {
+      background-color: rgba(#06bf25, 0.2);
+    }
+  }
+}

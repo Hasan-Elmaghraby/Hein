@@ -1,0 +1,41 @@
+.title_no_subscribe {
+  color: #e90b0b;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+}
+
+.subtitle_no_subscribe {
+  font-size: 13px;
+  font-weight: 400;
+  color: $paragraphSecondaryColor;
+}
+
+.packages_head_figure {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.title_subscribe {
+  color: $primaryColor;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.subtitle_subscribe {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: $secondaryColor;
+  margin-bottom: 12px;
+}
+
+.parag_subscribe {
+  font-size: 13px;
+  font-weight: 400;
+  color: #e90b0b;
+}

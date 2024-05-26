@@ -1,0 +1,189 @@
+.registeration_page__ {
+  padding-top: 4.4rem;
+  padding-bottom: 160px;
+  position: relative;
+  overflow: hidden;
+  min-height: 50vh;
+
+  @include sm {
+    padding: 50px 0;
+  }
+}
+
+.registeration_image {
+  max-width: 180px;
+  max-height: 120px;
+  margin: 0;
+
+  @include sm {
+    margin: 0 auto;
+  }
+}
+
+.register_figure__ {
+  margin-bottom: 50px !important;
+}
+
+.second_registration_title__ {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: $secondaryColor;
+  text-align: center;
+  margin-top: 4.1rem;
+  margin-bottom: 1.2rem;
+}
+
+.form_label_for_info_group__ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  font-size: 1.6rem;
+}
+
+.code_shapes__ {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  direction: ltr;
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 60px;
+  gap: 9px;
+
+  .code-input {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid $borderColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: $secondaryColor;
+    font-family: sans-serif;
+    outline: none;
+    background-color: rgba(#fff, 0.1);
+    caret-color: $secondaryColor;
+    transition: 0.5s;
+
+    &.active {
+      background-color: $yellowColor;
+      color: $thirdColor;
+    }
+  }
+}
+
+.registeration_title_wrapper__ {
+  margin-bottom: 34px;
+
+  @include sm {
+    margin-bottom: 20px;
+  }
+
+  @include xs {
+    margin-bottom: 15px;
+  }
+
+  &.center {
+    .registeration_title,
+    .registeration_sub_title {
+      text-align: center;
+      margin-inline-end: auto;
+      margin-inline-start: auto;
+    }
+
+    &.small_font {
+      .registeration_title {
+        font-size: 1.6rem;
+      }
+      .registeration_sub_title {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  // #########################################
+  .registeration_title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    width: fit-content;
+    color: $secondaryColor;
+    margin-bottom: 18px;
+
+    @include sm {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    @include xs {
+      font-size: 1.8rem;
+    }
+
+    &.none_margin {
+      margin-bottom: 0;
+    }
+
+    &.small_margin_bottom__ {
+      margin-bottom: 15px;
+    }
+  }
+
+  .registeration_sub_title {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: $paragraphSecondaryColor;
+    margin: 0;
+
+    @include sm {
+      text-align: center;
+    }
+
+    @include xs {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.verification_mail_title__ {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: $paragraphMainColor;
+  text-align: center;
+  direction: ltr;
+  margin-top: 1rem;
+  color: $primaryColor;
+  font-weight: 700;
+}
+
+.registeration_image_wrapper__ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+  height: 100%;
+}
+
+.registeration_image {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  max-width: 151px;
+}
+
+.regitration_form {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.forget_password {
+  font-size: 1.4rem;
+  color: $secondaryColor;
+  font-weight: 400;
+  margin: 2.2rem 0;
+  display: flex;
+  justify-content: center;
+}

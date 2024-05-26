@@ -1,0 +1,27 @@
+.no_data__ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  padding: 10rem 0;
+  
+  .figure__ {
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 140px;
+    min-height: 157px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+  
+  .no_data_title {
+    color: $paragraphSecondaryColor;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+}

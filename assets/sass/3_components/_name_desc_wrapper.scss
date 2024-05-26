@@ -1,0 +1,42 @@
+.name_desc_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex: 1;
+
+  .figure_wrapper {
+    width: 100%;
+    height: 100%;
+    max-width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    .figure__ {
+      padding-bottom: 100%;
+    }
+  }
+
+  .name {
+    font-size: 1.6rem;
+    color: $secondaryColor;
+    font-weight: 400;
+  }
+
+  .time {
+    font-size: 1.4rem;
+    color: $paragraphThirdColor;
+    font-weight: 400;
+  }
+
+  &.margin_bottom {
+    margin-bottom: 30px;
+  }
+
+  &.small_chat_image {
+    .figure_wrapper {
+      max-width: 25px;
+    }
+    .name {
+      font-size: 11px;
+    }
+  }
+}

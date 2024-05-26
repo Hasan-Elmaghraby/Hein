@@ -1,0 +1,220 @@
+.input__ {
+  height: $inputHeight;
+  border: solid 1px $borderColor;
+  background-color: $inputBackgroundColor;
+  outline: none;
+  width: 100%;
+  font-size: $inputFontSize;
+  color: $inputPlaceholderColor;
+  padding: 20px 29px;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  border-radius: $mainBorderRadius;
+
+  &::after {
+    content: "Your custom text here";
+    display: block;
+    font-size: 12px;
+    color: #999; /* Customize the color as needed */
+  }
+
+  @include xxs {
+    height: 44px;
+  }
+
+  &:focus,
+  &:hover {
+    border-color: $primaryColor;
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  &[type="tel"] {
+    direction: rtl;
+
+    @include dir {
+      direction: ltr;
+    }
+  }
+
+  &::placeholder {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: $inputPlaceholderColor;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  &:focus {
+    &::placeholder {
+      opacity: 0;
+    }
+
+    // &:invalid {
+    //   border-color: $redColor;
+    // }
+
+    // &:valid {
+    //   border-color: $greenColor;
+    // }
+  }
+
+  &.magin_bottom {
+    margin-bottom: 24px;
+  }
+
+  &.grey_background {
+    background-color: $inputGreyBackgroundColor;
+
+    &::placeholder {
+      color: #6d6d6d;
+    }
+  }
+
+  &.colored_white__ {
+    color: #fff;
+    border-color: #fff;
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+}
+
+.input_search {
+  position: relative;
+  width: 174px;
+
+  @include sm {
+    min-width: 100%;
+  }
+
+  .input__ {
+    padding: 10px 40px;
+  }
+
+  &::before {
+    position: absolute;
+    content: url("../images/shapes/header_icons/search.svg");
+    top: 55%;
+    inset-inline-start: 13px;
+    transform: translateY(-50%);
+  }
+}
+
+///////////// Start Floating Label
+.floating-label {
+  position: relative;
+
+  label {
+    color: #999;
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    inset-inline-start: 34px;
+    top: 12px;
+    transition: 0.2s ease all;
+  }
+
+  .select__ {
+    -webkit-appearance: none;
+    text-indent: 1px;
+    text-overflow: "";
+  }
+
+  option {
+    color: $secondaryColor;
+    font-size: 16px;
+  }
+
+  &.f_select {
+    &::after {
+      content: url(../images/shapes/arrow-down.svg);
+      position: absolute;
+      height: 24px;
+      width: 24px;
+      top: calc(50% + 2px);
+      transform: translateY(-50%);
+      inset-inline-end: 20px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+  }
+
+  &.margin_bottom {
+    margin-bottom: 15px;
+  }
+}
+
+.floating-input,
+.floating-select {
+  height: $inputHeight;
+  border: solid 1px $borderColor;
+  background-color: $inputBackgroundColor;
+  outline: none;
+  width: 100%;
+  font-size: $inputFontSize;
+  color: $inputPlaceholderColor;
+  padding: 0 29px;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  border-radius: $mainBorderRadius;
+}
+
+.floating-input:focus,
+.floating-select:focus {
+  outline: none;
+  transition: 0.2s ease all;
+}
+
+.floating-input:focus ~ label,
+.floating-input:not(:placeholder-shown) ~ label {
+  top: 3px;
+  font-size: 10px;
+}
+
+.floating-select:focus ~ label,
+.floating-select:not([value=""]):valid ~ label {
+  top: 3px;
+  font-size: 10px;
+}
+
+/* active state */
+.floating-input:focus ~ .bar:before,
+.floating-input:focus ~ .bar:after,
+.floating-select:focus ~ .bar:before,
+.floating-select:focus ~ .bar:after {
+  width: 50%;
+}
+
+.floating-textarea {
+  min-height: 30px;
+  max-height: 260px;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+/* highlighter */
+.highlight {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  top: 15%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.astrisk_input {
+  color: red;
+  font-size: 8px;
+}

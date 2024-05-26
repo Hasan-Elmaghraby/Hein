@@ -1,0 +1,36 @@
+.wallet_card {
+  padding: 18px 25px;
+  background-color: $thirdColor;
+  box-shadow: 0 3px 30px rgba(#5c5c5c, 0.16);
+  border-radius: $secondaryBorderRadius;
+  width: 100%;
+
+  .head_card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .icon__ {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include circle(40px);
+      background-color: #eeeeee;
+    }
+
+    .title {
+      font-size: 14px;
+    }
+
+    .time {
+      font-size: 14px;
+      color: $paragraphSecondaryColor;
+    }
+  }
+
+  .parg {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,55 @@
+.gender_radio_wrapper__ {
+  
+  input[type="radio"] {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    &:checked {
+      ~ .gender_radio__ {
+        background-color: $secondaryColor;
+
+        .icon__ {
+          filter: grayscale(0);
+        }
+
+        .text__ {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .gender_radio__ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid $secondaryColor;
+    padding: 1.4rem;
+    height: 54px;
+    width: 215px;
+    border-radius: $mainBorderRadius;
+    cursor: pointer;
+    transition: 0.5s;
+
+    @include xs {
+      width: 100%;
+    }
+
+    .icon__ {
+      filter: grayscale(1);
+      transition: 0.5s;
+    }
+
+    .text__ {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: $secondaryColor;
+      transition: 0.5s;
+    }
+  }
+}

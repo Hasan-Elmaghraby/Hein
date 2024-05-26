@@ -1,0 +1,467 @@
+.button__ {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid transparent;
+  outline: none;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  justify-content: center;
+  text-decoration: none;
+  gap: 10px;
+  height: 54px;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.5s;
+  font-size: 1.6rem;
+
+  .icon__ {
+    flex-shrink: 0;
+    transition: 0.5s;
+  }
+
+  &:focus {
+    // border: none;
+    outline: none;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &.default_cursor {
+    cursor: default !important;
+  }
+
+  // ===================================================================
+  // Center
+  // ===================================================================
+
+  &.center {
+    margin: 0 auto;
+  }
+
+  &.center_md {
+    @include md {
+      margin: 0 auto;
+    }
+  }
+
+  &.center_sm {
+    @include sm {
+      margin: 0 auto;
+    }
+  }
+
+  &.center_xs {
+    @include xs {
+      margin: 0 auto;
+    }
+  }
+
+  &.center_xxs {
+    @include xxs {
+      margin: 0 auto;
+    }
+  }
+
+  // ===================================================================
+  // Size
+  // ===================================================================
+
+  &.full_width {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  &.full_width_md {
+    @include md {
+      width: 100%;
+      min-width: 100%;
+    }
+  }
+
+  &.full_width_sm {
+    @include sm {
+      width: 100%;
+      min-width: 100%;
+    }
+  }
+
+  &.full_width_xs {
+    @include xs {
+      width: 100%;
+      min-width: 100%;
+    }
+  }
+
+  &.full_width_xxs {
+    @include xxs {
+      width: 100%;
+      min-width: 100%;
+    }
+  }
+
+  &.half_width {
+    width: 50%;
+  }
+
+  &.half_width_md {
+    @include md {
+      width: 50%;
+    }
+  }
+
+  &.half_width_sm {
+    @include sm {
+      width: 50%;
+    }
+  }
+
+  &.half_width_xs {
+    @include xs {
+      width: 50%;
+    }
+  }
+
+  &.half_width_xxs {
+    @include xxs {
+      width: 50%;
+    }
+  }
+
+  // ===================================================================
+  // Fixed Width & Height
+  // ===================================================================
+
+  &.fixed_size__ {
+    min-width: 168px;
+    max-width: 168px;
+  }
+
+  &.w_fit_content {
+    width: fit-content;
+  }
+
+  &.h_fit_content {
+    height: fit-content;
+  }
+
+  // ===================================================================
+  // Margin
+  // ===================================================================
+  &.margin_start_auto__ {
+    margin-inline-start: auto;
+  }
+
+  // ===================================================================
+  // Icon
+  // ===================================================================
+  &.scale_icon_on_hover {
+    &:hover {
+      .icon__ {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &.icon_dir {
+    .icon__ {
+      @include dir {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  // ===================================================================
+  // Colors
+  // ===================================================================
+
+  &.primary__ {
+    background-color: $primaryColor;
+    border-color: $primaryColor;
+
+    &.outline__ {
+      color: $primaryColor;
+
+      &:hover {
+        background-color: rgba($primaryColor, 0.1) !important;
+      }
+    }
+
+    &.none_background {
+      color: $primaryColor;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &:hover {
+      background-color: rgba($primaryColor, 0.9);
+    }
+  }
+
+  &.secondary__ {
+    background-color: $secondaryColor;
+    border-color: $secondaryColor;
+
+    &.outline__ {
+      color: $secondaryColor;
+
+      &:hover {
+        background-color: rgba($secondaryColor, 0.1) !important;
+      }
+    }
+
+    &:hover {
+      background-color: rgba($secondaryColor, 0.9);
+    }
+  }
+
+  &.red__ {
+    background-color: $redColor;
+    border-color: $redColor;
+
+    &.outline__ {
+      color: $redColor;
+
+      &:hover {
+        background-color: rgba($redColor, 0.1) !important;
+      }
+    }
+
+    &:hover {
+      background-color: rgba($redColor, 0.9);
+    }
+  }
+
+  &.green__ {
+    background-color: $greenColor;
+    border-color: $greenColor;
+
+    &.outline__ {
+      color: $greenColor;
+
+      &:hover {
+        background-color: rgba($greenColor, 0.1) !important;
+      }
+    }
+
+    &:hover {
+      background-color: rgba($greenColor, 0.9);
+    }
+  }
+
+  &.grey__ {
+    background-color: $greyColor;
+    border-color: $greyColor;
+
+    &.outline__ {
+      color: $greyColor;
+
+      &:hover {
+        background-color: rgba($greyColor, 0.1) !important;
+      }
+    }
+
+    &:hover {
+      background-color: rgba($greyColor, 0.9);
+    }
+  }
+
+  &.orange__ {
+    background-color: $orangeColor;
+    border-color: $orangeColor;
+
+    &.outline__ {
+      color: $orangeColor;
+
+      &:hover {
+        background-color: rgba($orangeColor, 0.1) !important;
+      }
+    }
+
+    &:hover {
+      background-color: rgba($orangeColor, 0.9);
+    }
+  }
+
+  &.yellow__ {
+    background-color: $yellowColor;
+    border-color: $yellowColor;
+
+    &.outline__ {
+      color: $yellowColor;
+
+      &:hover {
+        background-color: rgba($yellowColor, 0.1) !important;
+      }
+    }
+
+    &:hover {
+      background-color: rgba($yellowColor, 0.9);
+    }
+  }
+
+  &.red_bg_button {
+    background-color: #e90b0b;
+    border-color: #e90b0b;
+
+    &:hover {
+      background-color: rgba(#e90b0b, 0.9);
+    }
+  }
+
+  // ===================================================================
+  // Outline
+  // ===================================================================
+  &.outline__ {
+    background-color: transparent !important;
+  }
+
+  &.none_background {
+    background-color: transparent !important;
+    border: none !important;
+  }
+
+  // ===================================================================
+  // Border Radius
+  // ===================================================================
+  &.main_rounded__ {
+    border-radius: $mainBorderRadius;
+  }
+
+  &.secondary_rounded__ {
+    border-radius: $secondaryBorderRadius;
+  }
+
+  &.third_rounded__ {
+    border-radius: $thirdBorderRadius;
+  }
+
+  &.full_rounded__ {
+    border-radius: 50%;
+  }
+
+  // ===================================================================
+  // Other
+  // ===================================================================
+
+  &.submit_button__,
+  input[type="submit"] {
+    // height: 66px;
+    // color: $secondaryColor;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    &:hover {
+      background-color: rgba($primaryColor, 0.9);
+    }
+  }
+
+  &.search_for_partner_button__ {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  &.add_to_fav__ {
+    svg {
+      path {
+        transition: all 0.5s;
+      }
+    }
+
+    &:focus,
+    &.active {
+      svg {
+        path {
+          fill: $redColor !important;
+          stroke: $redColor !important;
+        }
+      }
+    }
+
+    &:hover {
+      svg {
+        path {
+          fill: rgba(#fff, 0.2);
+        }
+      }
+    }
+  }
+
+  &.adds_card_button {
+    background-color: rgba($primaryColor, 0.12);
+    color: $primaryColor;
+    border-radius: $mainBorderRadius;
+    min-width: 260px;
+    margin-top: 50px;
+    font-weight: 800;
+
+    &:hover {
+      background-color: rgba($primaryColor, 0.25);
+    }
+  }
+
+  &.sign_up_terms_modal_button {
+    color: $headingMainColor;
+    font-size: 1.4rem;
+    height: fit-content;
+
+    &:hover {
+      color: $primaryColor;
+      text-decoration: underline;
+    }
+  }
+
+  &.dropdown_button__ {
+    &.sections_dropdown {
+      position: relative;
+      align-items: baseline;
+      height: fit-content;
+      font-weight: 400;
+
+      @include sm {
+        padding: 10px 25px;
+        width: 100%;
+        justify-content: start;
+      }
+
+      &::after {
+        content: url(../images/shapes/arrow_down.svg);
+        margin-inline-start: 5px;
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+
+  &.submit-button_ads,
+  &.submit-button_commission {
+    background-color: $primaryColor;
+    color: $thirdColor;
+
+    &:disabled {
+      background-color: rgba($primaryColor, 0.11);
+      color: rgba($primaryColor, 0.39);
+      width: 100%;
+      border-radius: $mainBorderRadius;
+    }
+  }
+
+  &.unfollow {
+    background-color: rgba(#e90b0b, 0.05);
+    color: #e90b0b;
+    transition: $mainTransition;
+
+    &:hover {
+      background-color: #e90b0b;
+      color: $thirdColor;
+      .icon__ {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+}

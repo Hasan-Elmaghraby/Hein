@@ -1,0 +1,14 @@
+.contact_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 17px;
+  background-color: rgba(#0066c9, 0.12);
+  border-radius: $secondaryBorderRadius;
+  flex: 1;
+
+  .icon__ {
+    margin: 0;
+  }
+}

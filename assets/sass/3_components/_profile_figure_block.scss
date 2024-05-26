@@ -1,0 +1,19 @@
+.edit_profile_image {
+  width: 99px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+
+  .figure__ {
+    padding-bottom: 100%;
+  }
+}
+
+.edit_profile_image_wrapper {
+  margin: 0 auto;
+  width: fit-content;
+
+  .upload_photo__ {
+    margin-top: 7px;
+  }
+}

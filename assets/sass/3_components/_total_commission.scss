@@ -1,0 +1,21 @@
+.total_commission {
+  // display: flex;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  padding: 15px 30px;
+
+  background-color: rgba($yellowColor, 0.09);
+  border-radius: $mainBorderRadius;
+
+  .title {
+    font-size: 14px !important;
+  }
+
+  &.active {
+    display: flex;
+  }
+}

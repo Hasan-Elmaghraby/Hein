@@ -1,0 +1,33 @@
+.price_rate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  color: $primaryColor;
+  font-size: 2.5rem;
+  font-weight: 700;
+  .currency {
+    font-size: 1.8rem;
+  }
+
+  &.small_font {
+    font-size: 1.9rem;
+    margin-bottom: 19px;
+    .currency {
+      font-size: 1.6rem;
+    }
+  }
+
+  &.big_font {
+    font-size: 3.1rem;
+    margin-bottom: 19px;
+    .currency {
+      font-size: 2.3rem;
+    }
+  }
+
+  &.second_color {
+    color: $yellowColor;
+  }
+}

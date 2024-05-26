@@ -1,0 +1,72 @@
+// abstracts or helpers
+@import "1_abstracts/variables";
+@import "1_abstracts/functions";
+@import "1_abstracts/mixins";
+
+// base
+@import "2_base/fonts";
+@import "2_base/base";
+@import "2_base/links";
+@import "2_base/buttons";
+@import "2_base/overlay";
+@import "2_base/selection_color";
+@import "2_base/scroll_bar";
+@import "2_base/lazy_load";
+@import "2_base/image_block";
+@import "2_base/close_button";
+@import "2_base/animation_keyframes";
+
+//3_components
+@import "3_components/bootstrap_accordion";
+@import "3_components/bootstrap_modal";
+@import "3_components/bootstrap_tabs";
+@import "3_components/main_pages_heading";
+@import "3_components/main_section_heading";
+@import "3_components/main_site_link";
+@import "3_components/mix_it_up";
+@import "3_components/webrouk_custom_range";
+
+@import "3_components/section_card";
+@import "3_components/adds_card";
+@import "3_components/price_rate";
+@import "3_components/advertiser_data_block";
+@import "3_components/contact_block";
+@import "3_components/comment_card";
+@import "3_components/message_block";
+@import "3_components/chat_text";
+@import "3_components/name_desc_wrapper";
+@import "3_components/notifications_card";
+@import "3_components/account_info_block";
+@import "3_components/static_info_data_block";
+@import "3_components/profile_figure_block";
+@import "3_components/followers_card";
+@import "3_components/connect_block";
+@import "3_components/packages_card";
+@import "3_components/subscribe_packages_block";
+@import "3_components/block_head_figure";
+@import "3_components/wallet_card";
+@import "3_components/commission_calc_link";
+@import "3_components/total_commission";
+@import "3_components/head_commission_calc_page";
+
+// @import "3_components/pagination";
+@import "3_components/fancy_box";
+@import "3_components/custom_dropdown";
+@import "3_components/datepicker";
+@import "3_components/no_data";
+@import "3_components/content_scroll";
+
+// 4_layout
+@import "4_layout/header";
+@import "4_layout/footer";
+@import "4_layout/forms";
+@import "4_layout/sliders";
+
+// 5_pages
+@import "5_pages/default_page";
+@import "5_pages/home";
+@import "5_pages/registeration_pages";
+@import "5_pages/packages_page";
+@import "5_pages/wallet_page";
+
+@import "5_pages/furniture";

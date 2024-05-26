@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Hien</title>
+
+  <link rel="Site Icon" href="assets/images/logo.svg" />
+
+  <!-- ############################################################# -->
+  <!-- ################ Include Bootstrap Css Files ################ -->
+  <!-- #########################  Ar Pages ######################### -->
+  <link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css" />
+  <!-- #########################  En Pages ######################### -->
+  <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+  <!-- ############################################################ -->
+  <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" />
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/swiper.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Start Header Section -->
+
+  <header class="main_header__">
+    <div class="fixed_header__">
+      <div class="container">
+        <div class="header_content__">
+          <a class="header_logo__" href="index.html">
+            <figure class="figure__">
+              <img src="assets/images/logo.svg" alt=".." />
+            </figure>
+          </a>
+
+          <nav class="nav-om" id="navbar-menu-om">
+            <button class="close-button__"></button>
+
+            <figure class="figure__ nav_logo__">
+              <img src="assets/images/logo.svg" alt=".." />
+            </figure>
+
+            <ul class="nav-list-om list-unstyled">
+              <li class="header_list_item__ active">
+                <a href="index.html">الرئيسية </a>
+              </li>
+              <li class="header_list_item__">
+                <a href="about_us.html"> من نحن</a>
+              </li>
+              <li class="header_list_item__ ">
+                <div class="custom_dropdown__  sections">
+                  <button class="button__ dropdown_button__ sections_dropdown ">
+                    الأقسام
+                  </button>
+
+                  <div class="dropdown_menu__ section_menu_dropdown_">
+                    <ul>
+                      <li>
+                        <a class="link__ modify__" href="#">
+                          القسم الاول
+                        </a>
+                      </li>
+                      <li>
+                        <a class="link__ modify__" href="#">
+                          القسم الثاني
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </li>
+              <li class="header_list_item__">
+                <a href="products_page.html"> أحدث الاعلانات </a>
+              </li>
+              <li class="header_list_item__">
+                <a href="products_page.html"> تواصل معنا </a>
+              </li>
+            </ul>
+
+            <ul class="toolbar_options__ list-unstyled">
+              <li class=" input_search ">
+                <input class="input__ colored_white__" type="text" placeholder="قم بالبحث الآن...">
+              </li>
+
+              <li class="block__ ">
+                <a class="link__ modify__" href="notifications.html">
+                  <img src="assets/images/shapes/header_icons/notification.svg" alt=".." />
+                  <span class="circle_shape"></span>
+                </a>
+              </li>
+
+              <li class="block__ ">
+                <a class="link__ modify__" href="conversations.html">
+                  <img src="assets/images/shapes/header_icons/sms-tracking-linear.svg" alt=".." />
+                  <span class="circle_shape"></span>
+                </a>
+              </li>
+
+              <li class="block__ ">
+                <a class="link__ modify__" href="add_new_advertisement.html">
+                  <img src="assets/images/shapes/header_icons/add.svg" alt=".." />
+                </a>
+              </li>
+
+              <li class="block__ profile_item__ logged_in__">
+                <div class="custom_dropdown__ ">
+                  <button type="button"
+                    class="button__ dropdown_button__ link__ header_link__ profile_link__ full_rounded__">
+                    <img src="assets/images/shapes/header_icons/profile-bold.svg" alt=".." />
+                  </button>
+
+                  <div class="dropdown_menu__ profile_menu">
+                    <ul class="dropdown_list">
+                      <li>
+                        <a class="link__ profile__" href="profile.html"> <img
+                            src="assets/images/shapes/header_signin/account.svg" alt=""> الملف الشخصي</a>
+
+                      </li>
+                      <li>
+                        <a class="link__ profile__" href="myAds.html"> <img
+                            src="assets/images/shapes/header_signin/receipt-add-linear.svg" alt=""> إعلاناتي</a>
+
+                      </li>
+                      <li>
+                        <a class="link__ profile__" href="favourite.html"> <img
+                            src="assets/images/shapes/header_signin/heart-linear.svg" alt=""> المفضلة</a>
+
+                      </li>
+                      <li>
+                        <a class="link__ profile__" href="followers.html"> <img
+                            src="assets/images/shapes/header_signin/followers.svg" alt=""> المتابعون</a>
+
+                      </li>
+                      <li>
+                        <a class="link__ profile__" href="packages.html"> <img
+                            src="assets/images/shapes/header_signin/cube.svg" alt=""> الباقات</a>
+
+                      </li>
+                      <li>
+                        <a class="link__ profile__" href="wallet.html"> <img
+                            src="assets/images/shapes/header_signin/wallet.svg" alt=""> المحفظة</a>
+
+                      </li>
+                      <li>
+                        <a class="link__ profile__" href="commission.html"> <img
+                            src="assets/images/shapes/header_signin/mony.svg" alt=""> عمولة الموقع</a>
+
+                      </li>
+                      <li>
+                        <button data-toggle="modal" data-target="#log_out-modal" class="button__ logout__">
+                          <img src="assets/images/shapes/header_signin/logout.svg" alt=""> تسجيل الخروج
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+
+              <li class="block__ language_item__">
+                <div class="custom_dropdown__">
+                  <a class="link__ modify__" href="index_en.html">
+                    <img src="assets/images/shapes/header_icons/lang.svg" alt=".." />
+                  </a>
+                </div>
+              </li>
+
+
+            </ul>
+          </nav>
+
+          <!-- start active nenu button in small sizes  -->
+          <button class="menu_button__ button__" id="menu-butt-activ-om">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+              class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512">
+              <path fill="currentColor"
+                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+              </path>
+            </svg>
+          </button>
+          <!-- end active nenu button in small sizes  -->
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </div>
+  </header>
+
+  <!-- End Header Section -->
+
+  <!-- Start Hero Section -->
+
+  <main class="hero_sec__ default_section__ ">
+    <div class="container">
+
+      <div class="swiper swiper-container ">
+
+        <div class="swiper-wrapper ">
+
+          <div class="swiper-slide">
+
+            <div class="row row_modify space_between align_center">
+              <div class="col-6">
+                <div class="hero_desc">
+                  <h3 class="hero_title__">إعلاناتك مع هين</h3>
+                  <p class="hero_sub_title__">المنصة الإعلانية الأفضل لعرض
+                    إعلاناتك ونشرها بشكل سريع</p>
+
+                  <a href="" class=" link__ main_link hero_link center"> مشاهدة المزيد <figure
+                      class="icon__  figure__ ">
+                      <img src="assets/images/shapes/arrow-left-linear.svg" alt="">
+                    </figure></a>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="hero_figure_wrapper">
+                  <figure class="hero_figure figure__ loading-omd asp-om "><img class="img-om lazy-omd"
+                      data-src="assets/images/hero/hero.png" alt=""></figure>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="swiper-slide">
+
+            <div class="row row_modify space_between align_center">
+              <div class="col-6">
+                <div class="hero_desc">
+                  <h3 class="hero_title__">إعلاناتك مع هين</h3>
+                  <p class="hero_sub_title__">المنصة الإعلانية الأفضل لعرض
+                    إعلاناتك ونشرها بشكل سريع</p>
+
+                  <a href="" class=" link__ main_link hero_link center"> مشاهدة المزيد <figure
+                      class="icon__  figure__ ">
+                      <img src="assets/images/shapes/arrow-left-linear.svg" alt="">
+                    </figure></a>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="hero_figure_wrapper">
+                  <figure class="hero_figure figure__ loading-omd asp-om "><img class="img-om lazy-omd"
+                      data-src="assets/images/hero/hero.png" alt=""></figure>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- End Hero Section -->
+
+  <!-- Start About Us Section -->
+
+  <section class="about_us default_section__ overflow-body">
+    <div class="container">
+
+
+      <div class="about_us_wrapper">
+
+        <div class="section_head_wrapper center">
+          <h2 class="section_main_title__">من نحن</h2>
+          <h4 class="section_sub_title__">نبذة بسيطة عن هين</h4>
+        </div>
+
+        <figure class="figure__  about_us_logo">
+          <img src="assets/images/aboutUs/logo.png" alt=".." />
+        </figure>
+
+        <div class="main_parag__">
+          <p>
+            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص
+            أو شكل توضع
+            الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما-
+            للأحرف عوضاً
+            عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من
+            برامح النشر
+            المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم
+
+          </p>
+        </div>
+        <div class="parag__">
+          <p>
+            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص
+            أو شكل توضع
+            الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما-
+            للأحرف عوضاً
+            عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من
+            برامح النشر
+            المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem
+            ipsum" في أي
+            محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة ومختلفة من نص
+
+
+
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- End About Us Section -->
+
+
+  <!-- Start Sections -->
+
+  <section class="sections default_section__">
+    <div class="container">
+
+      <div class="section_head_wrapper center">
+        <h2 class="section_main_title__">الأقسام</h2>
+        <h4 class="section_sub_title__">تصفح أقسام هين المتنوعة والمختلفة</h4>
+      </div>
+
+      <div class="row row_modify with_row_gap">
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <a href="furniture.html" class="section_card link__">
+            <figure icon__><img src="assets/images/shapes/sections/car-linear.png" alt=""></figure>
+            <h3 class="title">سيارات</h3>
+          </a>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <a href="furniture.html" class="section_card link__">
+            <figure icon__><img src="assets/images/shapes/sections/buliding-linear.png" alt=""></figure>
+            <h3 class="title">عقارات</h3>
+          </a>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <a href="furniture.html" class="section_card link__">
+            <figure icon__><img src="assets/images/shapes/sections/mobile-linear.png" alt=""></figure>
+            <h3 class="title">جولاات </h3>
+          </a>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <a href="furniture.html" class="section_card link__">
+            <figure icon__><img src="assets/images/shapes/sections/speaker-linear.png" alt=""></figure>
+            <h3 class="title">إلكترونيات</h3>
+          </a>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <a href="furniture.html" class="section_card link__">
+            <figure icon__><img src="assets/images/shapes/sections/lamp-linear.png" alt=""></figure>
+            <h3 class="title">أثاث</h3>
+          </a>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <a href="furniture.html.html" class="section_card link__">
+            <figure icon__><img src="assets/images/shapes/sections/airpod-linear.png" alt=""></figure>
+            <h3 class="title">وظائف</h3>
+          </a>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <a href="furniture.html" class="section_card link__">
+            <figure icon__><img src="assets/images/shapes/sections/car-linear.png" alt=""></figure>
+            <h3 class="title">سيارات</h3>
+          </a>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <a href="furniture.html" class="section_card link__">
+            <figure icon__><img src="assets/images/shapes/sections/buliding-linear.png" alt=""></figure>
+            <h3 class="title">عقارات</h3>
+          </a>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <a href="furniture.html" class="section_card link__">
+            <figure icon__><img src="assets/images/shapes/sections/mobile-linear.png" alt=""></figure>
+            <h3 class="title">جولاات </h3>
+          </a>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <a href="furniture.html" class="section_card link__">
+            <figure icon__><img src="assets/images/shapes/sections/speaker-linear.png" alt=""></figure>
+            <h3 class="title">إلكترونيات</h3>
+          </a>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <a href="furniture.html" class="section_card link__">
+            <figure icon__><img src="assets/images/shapes/sections/lamp-linear.png" alt=""></figure>
+            <h3 class="title">أثاث</h3>
+          </a>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <a href="furniture.html.html" class="section_card link__">
+            <figure icon__><img src="assets/images/shapes/sections/airpod-linear.png" alt=""></figure>
+            <h3 class="title">وظائف</h3>
+          </a>
+        </div>
+
+
+
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- End Sections -->
+
+
+  <!-- Start Latest Adds -->
+  <section class="Adds_sec default_section__">
+    <div class="container">
+
+      <div class="section_head_wrapper center">
+        <h2 class="section_main_title__">أحدث الإعلانات</h2>
+        <h4 class="section_sub_title__">تصفح أقسام هين المتنوعة والمختلفة</h4>
+      </div>
+
+      <div class="row row_modify with_row_gap">
+        <div class="col-sm-6">
+          <a href="adds_details.html" class="Adds_card link__">
+            <div class="figure_wrapper">
+              <figure class=" figure__ loading-omd asp-om "><img class="img-om lazy-omd"
+                  data-src="assets/images/adds_sec/chair.png" alt=""></figure>
+              <h3 class="figure_title">أثاث</h3>
+            </div>
+
+            <div class="card_desc">
+              <h3 class="title">كرسي خشبي أسود خشب زان</h3>
+              <h4 class="time_location"> منذ 5 ساعات / مدينة الرياض , الدرعية</h4>
+              <h5 class="name_info">
+                <figure class="icon__"> <img src="assets/images/shapes/adds/profile.png" alt=""></figure>محمود الزهار
+              </h5>
+              <div class="price_rate">
+                <h5 class="price">375 <span class="currency">ر.س</span></h5>
+                <figure class="icon__"> <img src="assets/images/shapes/adds/heart.svg" alt=""></figure>
+              </div>
+
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6">
+          <a href="adds_details.html" class="Adds_card link__">
+            <div class="figure_wrapper">
+              <figure class=" figure__ loading-omd asp-om "><img class="img-om lazy-omd"
+                  data-src="assets/images/adds_sec/car.jpeg" alt=""></figure>
+              <h3 class="figure_title">سيارات</h3>
+            </div>
+
+            <div class="card_desc">
+              <h3 class="title">سيارة تويوتا كرولا 2020</h3>
+              <h4 class="time_location"> منذ 5 ساعات / مدينة الرياض , الدرعية</h4>
+              <h5 class="name_info">
+                <figure class="icon__"> <img src="assets/images/shapes/adds/profile.png" alt=""></figure>محمود الزهار
+              </h5>
+              <div class="price_rate">
+                <h5 class="price">50,960.00 <span class="currency">ر.س</span></h5>
+                <figure class="icon__"> <img src="assets/images/shapes/adds/heart.svg" alt=""></figure>
+              </div>
+
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6">
+          <a href="adds_details.html" class="Adds_card link__">
+            <div class="figure_wrapper">
+              <figure class=" figure__ loading-omd asp-om "><img class="img-om lazy-omd"
+                  data-src="assets/images/adds_sec/car.jpeg" alt=""></figure>
+              <h3 class="figure_title">سيارات</h3>
+            </div>
+
+            <div class="card_desc">
+              <h3 class="title">سيارة تويوتا كرولا 2020</h3>
+              <h4 class="time_location"> منذ 5 ساعات / مدينة الرياض , الدرعية</h4>
+              <h5 class="name_info">
+                <figure class="icon__"> <img src="assets/images/shapes/adds/profile.png" alt=""></figure>محمود الزهار
+              </h5>
+              <div class="price_rate">
+                <h5 class="price">50,960.00 <span class="currency">ر.س</span></h5>
+                <figure class="icon__"> <img src="assets/images/shapes/adds/heart.svg" alt=""></figure>
+              </div>
+
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6">
+          <a href="adds_details.html" class="Adds_card link__">
+            <div class="figure_wrapper">
+              <figure class=" figure__ loading-omd asp-om "><img class="img-om lazy-omd"
+                  data-src="assets/images/adds_sec/chair.png" alt=""></figure>
+              <h3 class="figure_title">أثاث</h3>
+            </div>
+
+            <div class="card_desc">
+              <h3 class="title">كرسي خشبي أسود خشب زان</h3>
+              <h4 class="time_location"> منذ 5 ساعات / مدينة الرياض , الدرعية</h4>
+              <h5 class="name_info">
+                <figure class="icon__"> <img src="assets/images/shapes/adds/profile.png" alt=""></figure>محمود الزهار
+              </h5>
+              <div class="price_rate">
+                <h5 class="price">375 <span class="currency">ر.س</span></h5>
+                <figure class="icon__"> <img src="assets/images/shapes/adds/heart.svg" alt=""></figure>
+              </div>
+
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6">
+          <a href="adds_details.html" class="Adds_card link__">
+            <div class="figure_wrapper">
+              <figure class=" figure__ loading-omd asp-om "><img class="img-om lazy-omd"
+                  data-src="assets/images/adds_sec/chair.png" alt=""></figure>
+              <h3 class="figure_title">أثاث</h3>
+            </div>
+
+            <div class="card_desc">
+              <h3 class="title">كرسي خشبي أسود خشب زان</h3>
+              <h4 class="time_location"> منذ 5 ساعات / مدينة الرياض , الدرعية</h4>
+              <h5 class="name_info">
+                <figure class="icon__"> <img src="assets/images/shapes/adds/profile.png" alt=""></figure>محمود الزهار
+              </h5>
+              <div class="price_rate">
+                <h5 class="price">375 <span class="currency">ر.س</span></h5>
+                <figure class="icon__"> <img src="assets/images/shapes/adds/heart.svg" alt=""></figure>
+              </div>
+
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6">
+          <a href="adds_details.html" class="Adds_card link__">
+            <div class="figure_wrapper">
+              <figure class=" figure__ loading-omd asp-om "><img class="img-om lazy-omd"
+                  data-src="assets/images/adds_sec/car.jpeg" alt=""></figure>
+              <h3 class="figure_title">سيارات</h3>
+            </div>
+
+            <div class="card_desc">
+              <h3 class="title">سيارة تويوتا كرولا 2020</h3>
+              <h4 class="time_location"> منذ 5 ساعات / مدينة الرياض , الدرعية</h4>
+              <h5 class="name_info">
+                <figure class="icon__"> <img src="assets/images/shapes/adds/profile.png" alt=""></figure>محمود الزهار
+              </h5>
+              <div class="price_rate">
+                <h5 class="price">50,960.00 <span class="currency">ر.س</span></h5>
+                <figure class="icon__"> <img src="assets/images/shapes/adds/heart.svg" alt=""></figure>
+              </div>
+
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6">
+          <a href="adds_details.html" class="Adds_card link__">
+            <div class="figure_wrapper">
+              <figure class=" figure__ loading-omd asp-om "><img class="img-om lazy-omd"
+                  data-src="assets/images/adds_sec/car.jpeg" alt=""></figure>
+              <h3 class="figure_title">سيارات</h3>
+            </div>
+
+            <div class="card_desc">
+              <h3 class="title">سيارة تويوتا كرولا 2020</h3>
+              <h4 class="time_location"> منذ 5 ساعات / مدينة الرياض , الدرعية</h4>
+              <h5 class="name_info">
+                <figure class="icon__"> <img src="assets/images/shapes/adds/profile.png" alt=""></figure>محمود الزهار
+              </h5>
+              <div class="price_rate">
+                <h5 class="price">50,960.00 <span class="currency">ر.س</span></h5>
+                <figure class="icon__"> <img src="assets/images/shapes/adds/heart.svg" alt=""></figure>
+              </div>
+
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6">
+          <a href="adds_details.html" class="Adds_card link__">
+            <div class="figure_wrapper">
+              <figure class=" figure__ loading-omd asp-om "><img class="img-om lazy-omd"
+                  data-src="assets/images/adds_sec/chair.png" alt=""></figure>
+              <h3 class="figure_title">أثاث</h3>
+            </div>
+
+            <div class="card_desc">
+              <h3 class="title">كرسي خشبي أسود خشب زان</h3>
+              <h4 class="time_location"> منذ 5 ساعات / مدينة الرياض , الدرعية</h4>
+              <h5 class="name_info">
+                <figure class="icon__"> <img src="assets/images/shapes/adds/profile.png" alt=""></figure>محمود الزهار
+              </h5>
+              <div class="price_rate">
+                <h5 class="price">375 <span class="currency">ر.س</span></h5>
+                <figure class="icon__"> <img src="assets/images/shapes/adds/heart.svg" alt=""></figure>
+              </div>
+
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <button class="button__ adds_card_button center">عرض جميع الاعلانات</button>
+
+    </div>
+  </section>
+  <!-- End Latest Adds -->
+
+
+  <!-- Start Contact Us Section -->
+
+  <section class="contact_us_sec__ default_section__">
+    <div class="container">
+
+      <div class="row row_modify with_row_gap">
+        <div class="col-lg-5">
+          <figure class="form_figure figure__ loading-omd">
+            <img class="img-om lazy-omd" data-src="assets/images/contactUs/contact.png" alt="" />
+          </figure>
+        </div>
+
+        <div class="col-lg-7">
+
+
+          <h3 class="title_form">تواصل معنا</h3>
+          <h5 class="subtitle_form">يمكنك إرسال شكوتك أو مقترحاتك إلينا</h5>
+
+          <form class="main_form__">
+            <div class="input_group__">
+              <input type="text" class="input__" placeholder="الاسم" />
+            </div>
+            <div class="input_group__">
+              <input type="number" class="input__" placeholder="رقم الجوال" />
+            </div>
+            <div class="input_group__">
+              <input type="email" class="input__" placeholder="البريد الإلكتروني" />
+            </div>
+            <div class="input_group__">
+              <textarea class="input__ textarea-om" placeholder="نص الرسالة"></textarea>
+            </div>
+            <div class="input_group__">
+              <button class="button__ primary__ main_rounded__ full_width">
+                إرسال
+              </button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- End Contact Us Section -->
+
+  <!-- Start Footer Section -->
+
+  <footer class="footer_sec__">
+    <div class="container">
+      <div class="row row_modify with_row_gap footer_content__">
+        <div class="col-lg-2">
+          <a class="footer_logo__" href="index.html">
+            <figure class="figure__">
+              <img src="assets/images/footer_logo.png" alt=".." />
+            </figure>
+          </a>
+        </div>
+
+        <div class="col-lg-5">
+          <h3 class="footer_head__">روابط سريعة</h3>
+          <ul class="footer_list__ list-unstyled">
+            <li><a href="#">من نحن</a></li>
+            <li><a href="commission.html">عمولة الموقع</a></li>
+            <li><a href="#">الأقسام</a></li>
+            <li><a href="privacy_policy.html">سياسة الخصوصية</a></li>
+            <li><a href="#">أحدث لأعلانات</a></li>
+            <li><a href="employment_treaty.html">معاهدة الإستخدام </a></li>
+            <li><a href="#">تواصل معنا</a></li>
+            <li><a href="#">تسجيل الدخول</a></li>
+
+          </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h3 class="footer_head__ center_sm">تابعنا علي</h3>
+          <ul class="footer_socials__ list-unstyled">
+
+            <li class="li__">
+              <a href="#!" class="link__">
+                <img class="img-om" src="assets/images/socials/snap_chat.svg" alt=".." width="" height="" />
+              </a>
+            </li>
+            <li class="li__">
+              <a href="#!" class="link__">
+                <img class="img-om" src="assets/images/socials/facebook.svg" alt=".." width="" height="" />
+              </a>
+            </li>
+            <li class="li__">
+              <a href="#!" class="link__">
+                <img class="img-om" src="assets/images/socials/what's_up.svg" alt=".." width="" height="" />
+              </a>
+            </li>
+            <li class="li__">
+              <a href="#!" class="link__">
+                <img class="img-om" src="assets/images/socials/instagram.svg" alt=".." width="" height="" />
+              </a>
+            </li>
+          </ul>
+          <div class="copyrights_content___">
+            <img class="copyright_icon__" src="assets/images/shapes/copyright.png" alt=".." />
+            جميع الحقوق محفوظة - هين 2024
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- End Footer Section -->
+
+
+  <!-- Start Modals -->
+
+  <!-- Log Out Modal -->
+  <div class="modal fade deal_modal_report" id="log_out-modal" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content content_block">
+        <div class="modal-header">
+          <figure class="modal-title icon__" id=""><img src="assets/images/shapes/logout.png" alt=""></figure>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img src="assets/images/shapes/close-modal.png" alt=""></span>إغلاق
+          </button>
+        </div>
+
+        <h3 class="title">تسجيل الخروج</h3>
+        <p class="parg">ههل أنت متأكد من تسجيل الخروج
+          من حسابك ؟</p>
+
+
+        <button class="button__ primary__ main_rounded__ red_bg_button full_width">
+          تسجيل الخروج
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- End Modals -->
+
+
+
+  <!-- start js include  -->
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap-select.min.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/swiper.min.js"></script>
+  <script src="assets/js/webrouk-custom-range.js"></script>
+  <script src="assets/js/plugin.js"></script>
+</body>
+
+</html>

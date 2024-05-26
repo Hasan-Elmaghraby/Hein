@@ -1,0 +1,130 @@
+@import "./toolbar/lang_link";
+@import "./toolbar/login_buttons";
+@import "./toolbar/user_info_links";
+
+.toolbar_options__ {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  // position: relative;
+  z-index: 1;
+  // margin-top: 10px;
+  flex-wrap: nowrap;
+  gap: 15px;
+
+  .block__ {
+    transition: 0.5s;
+
+    &.lang_list_item__ {
+      @include sm {
+        position: absolute;
+        top: 15px;
+        inset-inline-start: 15px;
+      }
+    }
+
+    &.log_out_item__ {
+      margin-inline-start: 10px;
+
+      .icon__ {
+        transform: rotate(-90deg);
+
+        @include dir {
+          transform: rotate(90deg);
+        }
+      }
+    }
+
+    &.header_contacts__ {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &.small_size_only__ {
+      display: none;
+
+      @include sm {
+        display: flex;
+      }
+    }
+  }
+  .link__ {
+    @include circle(44px);
+    background-color: rgba($thirdColor, 0.07);
+    position: relative;
+
+    .circle_shape {
+      position: absolute;
+      content: "";
+      @include circle(14px);
+      background-color: $yellowColor;
+      border: 2px solid $primaryColor;
+      top: 0;
+      inset-inline-start: -2px;
+    }
+    &:hover {
+      background-color: $secondaryColor;
+    }
+  }
+}
+
+// small size
+@include sm {
+  .toolbar_options__ {
+    // margin-top: 20px;
+    width: 100%;
+    min-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 15px;
+    // flex-direction: column;
+
+    .block__ {
+      &.language_item__ {
+        position: absolute;
+        top: 20px;
+        inset-inline-start: 20px;
+
+        .lang_link__ {
+          font-size: 1.2rem;
+          width: fit-content;
+
+          &::after {
+            display: none;
+          }
+        }
+      }
+
+      &.profile_item__ {
+        position: absolute;
+        top: 20px;
+        inset-inline-start: 75px;
+      }
+
+      &.add_item__ {
+        order: 10;
+      }
+
+      &.search_item__ {
+        min-width: 100%;
+      }
+    }
+  }
+
+  .sing_up_blocks_list_item__ {
+    width: 50%;
+  }
+}
+
+@include xxs {
+  .sing_up_blocks_list_item__ {
+    width: 80%;
+  }
+}
+
+.input_search {
+  .input__ {
+    height: 44px;
+  }
+}

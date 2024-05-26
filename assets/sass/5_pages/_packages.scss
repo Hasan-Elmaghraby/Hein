@@ -1,0 +1,48 @@
+.packages_page__ {
+  .content_wrapper {
+    width: 407px;
+    margin: 0 auto;
+  }
+
+  .main_image {
+    margin-bottom: 2rem;
+  }
+
+  .package_sub_title__ {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $headingMainColor;
+    margin-bottom: 1.2rem;
+  }
+  
+  .package_title__ {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $headingMainColor;
+    margin-bottom: 3.5rem;
+  }
+
+  .label_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $redColor;
+    background-color: rgba($redColor, 0.12);
+    border-radius: 17px;
+    padding: 1.5rem;
+    height: 52px;
+
+    .icon__ {
+      margin-inline-end: 1rem;
+      max-width: 20px;
+      max-height: 20px;
+      min-width: 20px;
+      min-height: 20px;
+    }
+  }
+
+}

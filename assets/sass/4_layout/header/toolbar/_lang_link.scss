@@ -1,0 +1,40 @@
+.lang_link__ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.6rem;
+  padding: 10px 0;
+  transition: 0.5s;
+  z-index: 10;
+  color: $headingMainColor;
+
+  .figure__ {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  &::after {
+    content: url(../images/shapes/arrow_down.svg);
+    margin-inline-start: 5px;
+  }
+
+  @include sm {
+    color: #fff;
+    filter: brightness(0) invert(1);
+  }
+
+  &:hover {
+    color: $headingMainColor;
+  }
+}
+
+.language_item__ {
+  img {
+    filter: brightness(0) invert(1);
+  }
+}

@@ -1,0 +1,59 @@
+.notifications_card {
+  padding: 25px 35px 30px 35px;
+  box-shadow: 0 3px 30px rgba(#5c5c5c, 0.16);
+  border-radius: $secondaryBorderRadius;
+  transition: $mainTransition;
+
+  .head_card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .icon__ {
+    @include circle(38px);
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: $mainTransition;
+
+    img {
+      max-width: 18px;
+      transition: $mainTransition;
+    }
+  }
+
+  .title {
+    font-size: 13px;
+    font-weight: 700;
+    color: $secondaryColor;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    font-weight: 300;
+    color: $paragraphThirdColor;
+  }
+
+  .parg {
+    font-size: 13px;
+    font-weight: 400;
+    color: $paragraphSecondaryColor;
+    padding-top: 10px;
+    transition: $mainTransition;
+  }
+
+  &.active {
+    .icon__ {
+      background-color: $yellowColor;
+
+      img {
+        filter: brightness(0) invert(1);
+      }
+    }
+    .parg {
+      color: $secondaryColor;
+    }
+  }
+}

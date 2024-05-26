@@ -1,0 +1,25 @@
+.commission_calc_link {
+  justify-content: start;
+  align-items: baseline;
+  width: 100%;
+  background-color: $thirdColor;
+  box-shadow: 0 0 60px rgba(#5c5c5c, 0.14);
+  padding: 22px;
+  padding-inline-start: 40px;
+  border-radius: 16px;
+  position: relative;
+  font-weight: 700;
+  font-size: 14px;
+
+  &::after {
+    position: absolute;
+    content: url(../images/shapes/arrow_calc.svg);
+
+    top: 27%;
+    inset-inline-end: 20px;
+  }
+  &:hover {
+    background-color: $secondaryColor;
+    color: $thirdColor;
+  }
+}

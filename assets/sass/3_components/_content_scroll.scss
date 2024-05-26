@@ -1,0 +1,18 @@
+.content_scroll_y {
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $primaryColor;
+    border-radius: $mainBorderRadius;
+  }
+
+  &::-webkit-scrollbar-track {
+    display: none;
+  }
+}

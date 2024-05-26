@@ -1,0 +1,21 @@
+.textarea-om {
+  padding: 17px 40px;
+  height: 81px;
+  border-radius: 27px;
+  resize: none;
+  width: 100%;
+  border: solid 1px #ddd;
+  caret-color: $primaryColor;
+  font-size: 1.4rem;
+
+  &:focus {
+    outline: 0;
+    border-color: $primaryColor;
+  }
+}
+
+textarea::placeholder {
+  font-size: 1.4rem;
+  color: $secondaryColor;
+  font-weight: 400;
+}

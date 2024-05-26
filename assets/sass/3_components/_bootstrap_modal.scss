@@ -1,0 +1,144 @@
+.modal {
+  // top: 10vh;
+  // position: fixed;
+
+  .modal-dialog {
+    border-radius: $mainBorderRadius;
+    overflow: hidden;
+  }
+
+  .modal-content {
+    padding: 4.2rem 4rem;
+    // border-radius: $mainBorderRadius;
+    border: none;
+    max-height: 550px;
+    overflow: overlay;
+
+    &.content_block {
+      .modal-title {
+        margin-top: -30px;
+      }
+    }
+  }
+
+  .modal-header {
+    border: none;
+    align-items: center;
+  }
+
+  .modal-title {
+    font-size: 1.4rem;
+    color: $secondaryColor;
+    font-weight: 800;
+  }
+
+  .close {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .close_modal_button {
+    position: absolute;
+    top: 10px;
+    inset-inline-start: 20px;
+
+    .icon__ {
+      max-width: 35px;
+      min-width: 35px;
+      max-height: 35px;
+      min-height: 35px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.modal-backdrop {
+  background-color: rgba($secondaryColor, 0.5) !important;
+  opacity: 0.78 !important;
+}
+
+.modal-open .container-fluid,
+.modal-open .container {
+  filter: blur(5px) grayscale(60%);
+}
+
+.modal-dialog {
+  max-width: 420px;
+  max-height: 520px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.specific_model_advertiser_wrapper {
+  .subtitle {
+    margin: 15px 0;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $paragraphSecondaryColor;
+  }
+
+  .textarea-om {
+    height: 81px;
+    border-radius: 20px;
+  }
+
+  .assessments_stars {
+    display: flex;
+    gap: 7px;
+    margin-bottom: 15px;
+  }
+}
+
+.content_block {
+  .title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: $secondaryColor;
+  }
+
+  .parg {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $secondaryColor;
+    margin-top: 11px;
+    margin-bottom: 34px;
+
+    &.light_font {
+      color: $paragraphSecondaryColor;
+    }
+  }
+}
+
+.modal_figure {
+  margin: 2.5rem auto;
+}
+
+.success_ads_info {
+  max-width: 77%;
+  margin: 0 auto;
+  text-align: center;
+
+  .parg {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.modal_button {
+  width: 100%;
+}
+
+.commission_parg {
+  font-size: 14px;
+  padding-top: 8px;
+  padding-bottom: 24px;
+  color: $paragraphSecondaryColor;
+}

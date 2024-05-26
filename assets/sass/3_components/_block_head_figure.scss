@@ -1,0 +1,21 @@
+.block_head_figure {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+
+  .title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $primaryColor;
+    margin-bottom: 12px;
+  }
+
+  &.no_records {
+    .title,
+    .price {
+      color: $paragraphSecondaryColor;
+    }
+  }
+}
