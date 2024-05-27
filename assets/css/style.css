@@ -1013,6 +1013,9 @@ html[dir=ltr] .close-button__ {
   max-height: 550px;
   overflow: overlay;
 }
+.modal .modal-content.overflow_hidden {
+  overflow: hidden;
+}
 .modal .modal-content.content_block .modal-title {
   margin-top: -30px;
 }
@@ -1082,13 +1085,6 @@ html[dir=ltr] .close-button__ {
 .specific_model_advertiser_wrapper .textarea-om {
   height: 81px;
   border-radius: 20px;
-}
-.specific_model_advertiser_wrapper .assessments_stars {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 7px;
-  margin-bottom: 15px;
 }
 
 .content_block .title {
@@ -2721,6 +2717,60 @@ html[dir=ltr] .Adds_card .name_info .icon__::before {
   font-size: 14px;
   font-weight: 400;
   color: #7c7d7e;
+}
+
+#assessments_stars {
+  /* make hover effect work properly in IE */
+  /* hide radio inputs */
+  /* set icon padding and size */
+  /* set default star color */
+  /* set color of none icon when unchecked */
+  /* if any input is checked, make its following siblings grey */
+  /* make all stars orange on rating group hover */
+  /* make hovered input's following siblings grey on hover */
+  /* make none icon grey on rating group hover */
+}
+#assessments_stars .rating-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+#assessments_stars .rating__icon {
+  pointer-events: none;
+}
+#assessments_stars .rating__input {
+  display: none;
+}
+#assessments_stars .rating__label {
+  cursor: pointer;
+  padding: 0 0.1em;
+  font-size: 2rem;
+}
+#assessments_stars .rating__icon--star {
+  -webkit-filter: unset;
+          filter: unset;
+}
+#assessments_stars .rating__icon--none {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+#assessments_stars .rating__input:checked ~ .rating__label .rating__icon--star {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+#assessments_stars .rating-group:hover .rating__label .rating__icon--star {
+  -webkit-filter: unset;
+          filter: unset;
+}
+#assessments_stars .rating__input:hover ~ .rating__label .rating__icon--star {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+#assessments_stars .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
 }
 
 .fancybox_title__ {
@@ -4718,8 +4768,9 @@ html[dir=ltr] .select__ .dropdown-toggle .filter-option {
   z-index: -1;
 }
 .checkbox-group-om .checkbox-om:checked + .checkbox-label-om {
+  background-color: #e89111;
   border-color: #e89111;
-  background-image: url("../images/shapes/checkbox.svg");
+  background-image: url("../images/shapes/yellow_star_s.png");
 }
 .checkbox-group-om .checkbox-om:checked ~ .label__ {
   color: #e89111;
@@ -4733,6 +4784,7 @@ html[dir=ltr] .select__ .dropdown-toggle .filter-option {
   border-radius: 50%;
   background-color: transparent;
   border: 1px solid #969696;
+  background-image: url("../images/shapes/star_grey-s.png");
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-margin-end: 6px;
@@ -6495,6 +6547,9 @@ html[dir=ltr] .about_us_wrapper::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
 }
 .title_adds_details_wrapper .icons_adds_details .button__ {

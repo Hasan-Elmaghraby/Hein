@@ -28,9 +28,9 @@
 
     &:checked {
       + .checkbox-label-om {
-        // background-color: $yellowColor;
+        background-color: $yellowColor;
         border-color: $yellowColor;
-        background-image: url("../images/shapes/checkbox.svg");
+        background-image: url("../images/shapes/yellow_star_s.png");
       }
 
       ~ .label__ {
@@ -48,6 +48,7 @@
     border-radius: 50%;
     background-color: transparent;
     border: 1px solid $paragraphThirdColor;
+    background-image: url("../images/shapes/star_grey-s.png");
     background-position: center center;
     background-repeat: no-repeat;
     margin-inline-end: 6px;

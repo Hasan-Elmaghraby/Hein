@@ -247,7 +247,7 @@
               <button class="button__">
                 <figure class="icon__"><img src="assets/images/shapes/upload.svg" alt=""></figure>
               </button>
-              <button class="button__">
+              <button type="button" class="btn    " data-toggle="modal" data-target="#specific_modal_advertiser">
                 <figure class="icon__"><img src="assets/images/shapes/star.svg" alt=""></figure>
               </button>
 
@@ -555,13 +555,6 @@
   <!-- End Main Adds details -->
 
 
-  <!-- start modal button -->
-  <button type="button" class="btn button__ primary__ main_rounded__ " data-toggle="modal"
-    data-target="#specific_modal_advertiser">
-    تقييم المعلن
-  </button>
-  <!-- End modal button -->
-
 
   <!-- Start Footer Section -->
 
@@ -776,10 +769,10 @@
   </div>
 
   <!-- //////modal for specific_modal_advertiser -->
-  <div class="modal fade" id="specific_modal_advertiser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
+  <div class="modal fade " id="specific_modal_advertiser" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <div class="modal-content ">
+      <div class="modal-content overflow_hidden ">
         <div class="modal-header">
           <h5 class="modal-title" id="">تقييم المعلن</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -800,13 +793,42 @@
           </div>
           <h4 class="subtitle">يمكنك تقييم هذا المعلن بناء على تجربتك معه</h4>
 
-          <div class="assessments_stars">
-            <figure class="icon__"><img src="assets/images/shapes/star.svg" alt=""></figure>
-            <figure class="icon__"><img src="assets/images/shapes/star.svg" alt=""></figure>
-            <figure class="icon__"><img src="assets/images/shapes/star.svg" alt=""></figure>
-            <figure class="icon__"><img src="assets/images/shapes/star.svg" alt=""></figure>
-            <figure class="icon__"><img src="assets/images/shapes/star.svg" alt=""></figure>
+          <div id="assessments_stars">
+            <div class="rating-group">
+              <label aria-label="1 star" class="rating__label" for="rating-1">
+                <figure class="icon__ rating__icon rating__icon--star"><img src="assets/images/shapes/star-active.svg"
+                    alt="">
+                </figure>
+              </label>
+              <input class="rating__input" name="rating" id="rating-1" value="1" type="radio" checked>
+              <label aria-label="2 stars" class="rating__label" for="rating-2">
+                <figure class="icon__ rating__icon rating__icon--star"><img src="assets/images/shapes/star-active.svg"
+                    alt="">
+                </figure>
+              </label>
+              <input class="rating__input" name="rating" id="rating-2" value="2" type="radio">
+              <label aria-label="3 stars" class="rating__label" for="rating-3">
+                <figure class="icon__ rating__icon rating__icon--star"><img src="assets/images/shapes/star-active.svg"
+                    alt="">
+                </figure>
+              </label>
+              <input class="rating__input" name="rating" id="rating-3" value="3" type="radio">
+              <label aria-label="4 stars" class="rating__label" for="rating-4">
+                <figure class="icon__ rating__icon rating__icon--star"><img src="assets/images/shapes/star-active.svg"
+                    alt="">
+                </figure>
+              </label>
+              <input class="rating__input" name="rating" id="rating-4" value="4" type="radio">
+              <label aria-label="5 stars" class="rating__label" for="rating-5">
+                <figure class="icon__ rating__icon rating__icon--star"><img src="assets/images/shapes/star-active.svg"
+                    alt="">
+                </figure>
+              </label>
+              <input class="rating__input" name="rating" id="rating-5" value="5" type="radio">
+            </div>
+
           </div>
+
           <div class="input_group__">
             <textarea class="input__ textarea-om" placeholder="قم بكتابة رأيك في المعلن"></textarea>
           </div>

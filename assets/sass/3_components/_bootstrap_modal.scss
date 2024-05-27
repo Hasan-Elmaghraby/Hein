@@ -14,6 +14,10 @@
     max-height: 550px;
     overflow: overlay;
 
+    &.overflow_hidden {
+      overflow: hidden;
+    }
+
     &.content_block {
       .modal-title {
         margin-top: -30px;
@@ -89,12 +93,6 @@
   .textarea-om {
     height: 81px;
     border-radius: 20px;
-  }
-
-  .assessments_stars {
-    display: flex;
-    gap: 7px;
-    margin-bottom: 15px;
   }
 }
 
